@@ -12,7 +12,7 @@ try:
     tive_sum = 0
     cont = 0
     for i in range(n):
-        for j in range(i + 1, n):  
+        for j in range(i + 1, n):
             if F[i][j] > 0:
                 tive_sum += F[i][j]
                 cont += 1
@@ -28,11 +28,11 @@ try:
         row_sum = sum(F[i])
         if row_sum > max_sum:
             max_sum = row_sum
-            index = i  
+            index = i
     print("Матрица F:")
     for row in F:
         print(row)
-    
+
     print("Среднее арифметическое положительных элементов выше главной диагонали:", ave)
     print("Номер первой строки с наибольшей суммой элементов:", index + 1)
 
